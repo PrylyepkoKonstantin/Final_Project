@@ -1,0 +1,44 @@
+.logo {
+	height: 35px;
+	background: url("img/logo.png") no-repeat;
+	margin-top: 12px; 
+}
+.nav {
+	float: right;
+	margin-top: 8px;
+}
+li>a {
+	text-decoration: none;
+   	text-transform: uppercase;
+   	color: black;
+   	font-family: url("font/Open Sans Bold.ttf");
+   	font-weight: bold;
+   	font-size: 13px;
+   }
+.progressbar {
+	border: 1px solid red;
+}
+.backgroundImage{
+	height: 680px;
+	background: url("img/background.png") no-repeat;
+	background-position: center;
+	opacity: 1;
+}
+.header_line1 {
+	margin-top: 15px; 
+	height: 5px;
+	background-color: #fdc00f;
+}
+.header_line2 {
+	float: right;
+	width: 25%;
+	height: 5px;
+	background-color: #dbdbdb;
+}
+
+.text_welcome{
+	border: 1px solid blue;
+	height: 100px;
+	width: 50px;
+
+}
