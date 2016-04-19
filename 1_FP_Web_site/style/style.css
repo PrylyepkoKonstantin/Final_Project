@@ -1,3 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,600,700);
+@import url(https://fonts.googleapis.com/css?family=Cantarell:700);
+
 .logo {
 	height: 35px;
 	background: url("img/logo.png") no-repeat;
@@ -11,34 +15,155 @@ li>a {
 	text-decoration: none;
    	text-transform: uppercase;
    	color: black;
-   	font-family: url("font/Open Sans Bold.ttf");
+   	font-family: 'Open Sans', sans-serif;
    	font-weight: bold;
    	font-size: 13px;
    }
+a:active {
+  transform: scale(1.2);
+  background-color: white;
+}
+
+
 .progressbar {
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 .backgroundImage{
-	height: 680px;
+	height: 510px;
 	background: url("img/background.png") no-repeat;
 	background-position: center;
 	opacity: 1;
 }
 .header_line1 {
-	margin-top: 15px; 
+	margin-top: 15px;
 	height: 5px;
 	background-color: #fdc00f;
 }
+.backgroundImage_line {
+	height: 5px;
+	background-color: #fdc00f;
+}
+
+
 .header_line2 {
 	float: right;
 	width: 25%;
 	height: 5px;
 	background-color: #dbdbdb;
 }
-
-.text_welcome{
-	border: 1px solid blue;
-	height: 100px;
-	width: 50px;
-
+.text_hello {
+	font-size: 74px;
+  	font-family: 'Raleway', sans-serif;;
+  	color: rgb(42, 43, 47);
+  	line-height: 0.8;
+  	text-align: center;
+  	position: relative;
+  	top: 30%;
+ }
+.text_hello > span {
+	text-transform: uppercase;
+	font-size: 86px;
+	font-weight: bolder;
+	font-family: 'Cantarell', sans-serif;
+	letter-spacing: 11px;
 }
+.text_idea {
+  	font-size: 15px;
+  	font-family: 'Open Sans italic', sans-serif;
+  	color: rgb(117, 121, 137);
+  	font-style: italic;
+   	text-align: center;
+  	position: relative;
+  	text-decoration: underline;
+  	top: 33%;
+}
+
+/*Черточки вокруг хелоу*/
+
+/*.rightarrow {
+	border: 1px solid yellow;
+	background-color: rgb(42, 43, 47);
+	display: inline-block;
+  	position: relative;
+  	float: right;
+  	right: 20%;
+  	width: 80px;
+  	height: 5px;
+}
+
+.leftarrow{
+	border: 1px solid yellow;
+	background-color: rgb(42, 43, 47);
+	display: inline-block;
+  	position: relative;
+  	float: left;
+  	left: 20%;
+  	width: 80px;
+  	height: 5px;
+}*/
+
+
+
+.service3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 2322px;
+  height: 7260px;
+  z-index: 238;
+}
+.cursor_hand {
+  background-image: url("cursor-hand.png");
+  position: absolute;
+  left: 1352px;
+  top: 1479px;
+  width: 19px;
+  height: 24px;
+  z-index: 237;
+}
+.In_varius_eu_elit_vel_mattis__Proin_ac_enim_orci__ {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  line-height: 1.286;
+  text-align: justifyCenter;
+  position: absolute;
+  left: 1197.406px;
+  top: 1536.003px;
+  width: 207px;
+  height: 29px;
+  z-index: 236;
+}
+.testing {
+  font-size: 18px;
+  font-family: "Open Sans";
+  color: rgb(253, 192, 15);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.5;
+  text-align: center;
+  position: absolute;
+  left: 1260.797px;
+  top: 1467px;
+  z-index: 235;
+}
+.fa_dashboard {
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 1285px;
+  top: 1335px;
+  width: 40px;
+  height: 32px;
+  z-index: 234;
+}
+.icon_bg {
+  background-color: rgb(253, 192, 15);
+  position: absolute;
+  left: 1223px;
+  top: 1302px;
+  width: 168px;
+  height: 135px;
+  z-index: 233;
+}
+
