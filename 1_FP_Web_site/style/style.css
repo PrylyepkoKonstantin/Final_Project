@@ -2,6 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,600,700);
 @import url(https://fonts.googleapis.com/css?family=Cantarell:700);
 
+body {
+	background-color: #efefef;
+}
 .logo {
 	height: 35px;
 	background: url("img/logo.png") no-repeat;
@@ -12,9 +15,8 @@
 	background: url("img/logo_white.png") no-repeat;
 	margin-top: 12px;
 }
-/*////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////-CONTACN STYLE-/////////////////////////////////////////////////*/
 .header_contact{
-	border: 1px solid yellow;
 	background-color: black;
 }
 .contact_menu {
@@ -28,35 +30,98 @@
 .map{
 	height: 310px;
 }
-.contact_info{
-	margin: 5px;
-	border: 1px solid yellow;
-}
 .wrap_info{
-	margin-top: 15px;
 	color: black;
    	font-family: 'Open Sans', sans-serif;
    	font-weight: bold;
 	width: 300px;
 	display: inline-block;
+	position: relative;
 }
 .info:first-child {
 	margin-top: 25px;
 }
 .info{
-
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	padding: 8px;
-	border: 1px solid red;
+}
+form {
+	display: inline-flex;
+}
+.wrap_form_info{
+	margin-top: 25px;
+	color: black;
+   	font-family: 'Open Sans', sans-serif;
+   	font-weight: bold;
+	display: inline-block;
+	position: relative;
+}
+.form_message{
+	margin-top: 15px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+input {
+	margin: 5px;
+	font-size: 14px;
+}
+.form_message>div{
+	font-size: 14px;	
+}
+.submit_button {
+  border-radius: 3px;
+  background-color: rgb(253, 192, 15);
+  width: 165px;
+  height: 55px;
 }
 
-/*.glyphicon{
-	width: 20px;
-	height: 20px;
-}*/
-/*///////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////-BLOG STYLE-/////////////////////////////////////////////////*/
+.blog{
+	display: inline-flex;
+	margin: 60px;
+	background-color: #ffffff;
+}
+.blog_content{
+	margin: 20px;
+}
+.blog_header{
+	font-family: 'Open Sans', sans-serif;
+   	font-weight: bold;
+	margin: 20px;
+}
+.blog_elements1 {
+	font-family: 'Open Sans italic', sans-serif;
+	font-style: italic;
+	font-weight: lighter;
+	font-size: 12px;
+	margin: 20px;
+	/*border: 1px solid blue;*/
+}
+.blog_img {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	background-color: black;
+}
+.btn{
+	text-align:center;
+	margin: 0;
+	padding: 2px;
+	/*width: 20px;
+	height: 20px;*/
+	background-color: white;
+	font-family: 'Open Sans italic', sans-serif;
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 12px;
+	border-color: white;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
 .nav {
 	float: right;
 	margin-top: 8px;
