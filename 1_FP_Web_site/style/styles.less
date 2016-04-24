@@ -1,21 +1,44 @@
+// VARIABLES
+@base-bg: #efefef;
+@bg-color: rgb(253, 192, 15);
+@base-font: 'Open Sans', sans-serif;
+@additional-font: 'Raleway', sans-serif;
+@base-font-italic: 'Open Sans italic', sans-serif;
+@base-weight: bold;
+@base-height: 35px;
+@padding: 10px;
+@base-size: 12px;
+
+@base-color: ;
+@menu-bg-color: ;
+@form-items-color: ;
+
+// MIXINS
+.headerLine {
+	height: 5px;
+	background-color: @bg-color;
+}
+// STYLES
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,400italic,600,700);
 @import url(https://fonts.googleapis.com/css?family=Cantarell:700);
 
 body {
-	background-color: #efefef;
+	background-color: @base-bg;
 }
+
 .logo {
-	height: 35px;
+	height: @base-height;
 	background: url("img/logo.png") no-repeat;
 	margin-top: 12px; 
 }
 .logo_white {
-	height: 35px;
+	height: @base-height;
 	background: url("img/logo_white.png") no-repeat;
 	margin-top: 12px;
 }
-/*///////////////////////////////-CONTACN STYLE-/////////////////////////////////////////////////*/
+//CONTACN STYLE
 .header_contact{
 	background-color: black;
 }
@@ -23,8 +46,8 @@ body {
 	text-decoration: none;
    	text-transform: uppercase;
    	color: #ffffff;
-   	font-family: 'Open Sans', sans-serif;
-   	font-weight: bold;
+   	font-family: @base-font;
+   	font-weight: @base-weight;
    	font-size: 12px;
 }
 .map{
@@ -32,53 +55,53 @@ body {
 }
 .wrap_info{
 	color: black;
-   	font-family: 'Open Sans', sans-serif;
-   	font-weight: bold;
+   	font-family: @base-font;
+   	font-weight: @base-weight;
 	width: 300px;
 	display: inline-block;
 	position: relative;
 }
+.info{
+	font-family:@base-font;
+	font-size: @base-size;
+	font-weight: normal;
+	padding: @padding;
+}
 .info:first-child {
 	margin-top: 25px;
-}
-.info{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
-	font-weight: normal;
-	padding: 8px;
 }
 form {
 	display: inline-flex;
 }
+
 .wrap_form_info{
 	margin-top: 25px;
 	color: black;
-   	font-family: 'Open Sans', sans-serif;
-   	font-weight: bold;
+   	font-family: @base-font;
+   	font-weight: @base-weight;
 	display: inline-block;
 	position: relative;
 }
 .form_message{
 	margin-top: 15px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-family: @base-font;
+	font-size: @base-size;
 	font-weight: normal;
 }
 input {
 	margin: 5px;
-	font-size: 14px;
+	font-size: @base-size;
 }
 .form_message>div{
-	font-size: 14px;	
+	font-size: @base-size;	
 }
 .submit_button {
   border-radius: 3px;
-  background-color: rgb(253, 192, 15);
+  background-color: darken( @bg-color , 5%);
   width: 165px;
   height: 55px;
 }
-
-/*////////////////////////////////-BLOG STYLE-/////////////////////////////////////////////////*/
+//BLOG STYLE
 .blog{
 	display: inline-flex;
 	margin: 60px 0 0 60px;
@@ -88,17 +111,16 @@ input {
 	margin: 20px;
 }
 .blog_header{
-	font-family: 'Open Sans', sans-serif;
-   	font-weight: bold;
+	font-family: @base-font;
+   	font-weight: @base-weight;
 	margin: 20px;
 }
 .blog_elements1 {
-	font-family: 'Open Sans italic', sans-serif;
+	font-family: @base-font-italic;
 	font-style: italic;
 	font-weight: lighter;
-	font-size: 12px;
+	font-size: @base-size;
 	margin: 20px;
-	/*border: 1px solid blue;*/
 }
 .blog_img {
 	width: 200px;
@@ -110,18 +132,19 @@ input {
 	text-align:center;
 	margin: 0;
 	padding: 2px;
-	/*width: 20px;
-	height: 20px;*/
 	background-color: white;
-	font-family: 'Open Sans italic', sans-serif;
+	font-family: @base-font-italic;
 	color: black;
 	font-style: italic;
-	font-weight: bold;
+	font-weight: @base-weight;
 	text-decoration: underline;
-	font-size: 12px;
+	font-size: @base-size;
 	border-color: white;
 }
-/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+.modal-body {
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 10%, rgba(246,246,246,1) 34%, rgba(232,216,232,1) 49%, rgba(232,216,232,1) 100%);
+}
+// MAIN STYLE
 .nav {
 	float: right;
 	margin-top: 8px;
@@ -130,29 +153,25 @@ input {
 	text-decoration: none;
    	text-transform: uppercase;
    	color: black;
-   	font-family: 'Open Sans', sans-serif;
-   	font-weight: bold;
-   	font-size: 12px;
+   	font-family: @base-font;
+   	font-weight: @base-weight;
+   	font-size: @base-size;
 }
-
 a:active {
   transform: scale(1.2);
   background-color: white;
 }
 .backgroundImage{
-	height: 410px;
+	height: 350px;
 	background: url("img/background.png") no-repeat;
 	background-position: center;
 	opacity: 1;
 }
 .header_line1 {
-/*	margin-top: 15px;*/
-	height: 5px;
-	background-color: #fdc00f;
+	.headerLine
 }
 .backgroundImage_line {
-	height: 5px;
-	background-color: #fdc00f;
+	.headerLine
 }
 .header_line2 {
 	float: right;
@@ -161,10 +180,10 @@ a:active {
 	background-color: #dbdbdb;
 }
 .text_hello {
-	font-size: 64px;
-  	font-family: 'Raleway', sans-serif;;
+	font-size: 50px;
+  	font-family: @additional-font;
   	color: rgb(42, 43, 47);
-  	line-height: 0.8;
+  	line-height: 0.99;
   	text-align: center;
   	position: relative;
   	top: 30%;
@@ -176,25 +195,14 @@ a:active {
 	font-family: 'Cantarell', sans-serif;
 	letter-spacing: 11px;
 }
-.text_idea {
-  	font-size: 15px;
-  	font-family: 'Cantarell', sans-serif;
-  	color: black;
-  	font-style: italic;
-   	text-align: center;
-  	position: relative;
-   	letter-spacing: 5px;
-  	top: 38%;
-}
 .backgroundImage_dark{
-	/*height: 420px;*/
 	background: url("img/background_dark.png")repeat;
 	background-position: center;
 	opacity: 1;
 }
 .text_whatwedo {
-	font-size: 50px;
-  	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+  	font-family: @additional-font;
   	font-weight: lighter;
   	color: rgb(255, 255, 255);
   	text-align: center;
@@ -202,15 +210,14 @@ a:active {
   	top: 15%;
 }
 .text_whatwedo > span {
-	font-size: 60px;
+	font-size: 46px;
 	font-weight: 900;
 	font-family: 'Raleway', sans-serif;
 }
-
 .text_idea_whatwedo {
 	top: 15%;
-	font-size: 12px;
-  	font-family: 'Open Sans Italic', sans-serif;
+	font-size: @base-size;
+  	font-family: @base-font-italic;
   	color: rgb(255, 255, 255);
   	font-style: italic;
    	text-align: center;
@@ -228,15 +235,15 @@ a:active {
 	margin:10px;
 	position: relative;
 	top: 35%;
-	font-family: 'Open Sans', sans-serif;
+	font-family: @base-font;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: @base-weight;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size:  @base-size;
 }
 .box_child {
-	width:173px;
-	height:150px;
+	width:150px;
+	height:130px;
 	display:inline-block;
 	background:url("img/icon_bg.png") no-repeat;
 	margin:10px;
@@ -245,7 +252,7 @@ a:active {
 .box_icon1 {
 	background:url("img/fa-search-plus.png") no-repeat;
 	top: 20%;
-	left: 38%;
+	left: 31%;
 	height: 40px;
 	width: 40px;
 	position: absolute;
@@ -253,7 +260,7 @@ a:active {
 .box_icon2 {
 	background:url("img/fa-cubes.png") no-repeat;
 	top: 20%;
-	left: 35%;
+	left: 27%;
 	height: 40px;
 	width: 49px;
 	position: absolute;
@@ -261,7 +268,7 @@ a:active {
 .box_icon3 {
 	background:url("img/Test-Tube-icon.png") no-repeat;
 	top: 22%;
-	left: 40%;
+	left: 33%;
 	height: 40px;
 	width: 49px;
 	position: absolute;
@@ -269,7 +276,7 @@ a:active {
 .box_icon4 {
 	background:url("img/fa-send-o.png") no-repeat;
 	top: 20%;
-	left: 35%;
+	left: 30%;
 	height: 40px;
 	width: 49px;
 	position: absolute;
@@ -279,7 +286,7 @@ a:active {
 }
 .child:hover {
 	color: #fdc00f;
-	font-size: 12px;
+	font-size: @base-size;
 	transform: scale(1.2);
 }
 .contact{
@@ -288,15 +295,13 @@ a:active {
 	display: inline-block;
 }
 .button {
-	font-size: 10px;
-	/*padding: 5px;*/
-	font-family: 'Open Sans', sans-serif;
+	font-size: @base-size;
+	font-family: @base-font;
 	margin: 25px;
 	display: inline-block;
-	/*position: relative;*/
 }
 .button > span {
-	font-weight: bold;
+	font-weight: @base-weight;
 }
 .button1, .button2, .button3, .button4, .button5 {
 	width: 48px;
@@ -306,19 +311,97 @@ a:active {
 	position: relative;
 	background: url(img/sprites-social.png) no-repeat;
 }
+	.button1 {background-position: 0 -48px;}
+	.button1:active {background-position: 0 0;}
 
-		.button1 {background-position: 0 -48px;}
-		.button1:active {background-position: 0 0;}
+	.button2 {background-position:-48px -48px;}
+	.button2:active {background-position:-48px 0;}
 
-		.button2 {background-position:-48px -48px;}
-		.button2:active {background-position:-48px 0;}
+	.button3 {background-position:-96px -48px;}
+	.button3:active {background-position:-96px 0;}
 
-		.button3 {background-position:-96px -48px;}
-		.button3:active {background-position:-96px 0;}
+	.button4 {background-position:-144px -48px;}
+	.button4:active {background-position:-144px 0;}
 
-		.button4 {background-position:-144px -48px;}
-		.button4:active {background-position:-144px 0;}
+	.button5 {background-position:-240px -48px;}
+	.button5:active {background-position:-240px 0;}
 
-		.button5 {background-position:-240px -48px;}
-		.button5:active {background-position:-240px 0;}
+.animate {
+	margin-left: 600px;
+}
+.run {
+	margin: 10px;
+	background-image: url(img/sprite-steps.png);
+	background-position: -0.3px -2px;
+	background-repeat: repeat;
+	width: 54px;
+	height: 73px;
+	animation: run 1s steps(9) infinite;
+}
+ // ANIMATION
+@keyframes run {		
+	100% {
+	background-position: 457px 0;
+}
+}
 
+// MEDIA QUERIES
+
+/* < 765px */
+
+@media only screen and (max-width: 765px) {
+.logo {
+		text-align: center;
+}
+.backgroundImage{
+	height: 200px;
+	background: url("img/background.png") no-repeat;
+	background-position: center;
+	opacity: 1;
+}
+.text_hello {
+	font-size: 30px;
+  	font-family: @additional-font;
+  	color: rgb(42, 43, 47);
+  	line-height: 0.99;
+  	text-align: center;
+  	position: relative;
+  	top: 30%;
+ }
+.text_hello > span {
+	text-transform: uppercase;
+	font-size: 46px;
+	font-weight: bolder;
+	font-family: 'Cantarell', sans-serif;
+	letter-spacing: 9px;
+}
+.text_whatwedo {
+	font-size: 20px;
+  	font-family: @additional-font;
+  	font-weight: lighter;
+  	color: rgb(255, 255, 255);
+  	text-align: center;
+  	position: relative;
+  	top: 15%;
+}
+.text_whatwedo > span {
+	font-size: 36px;
+	font-weight: 900;
+	font-family: 'Raleway', sans-serif;
+}
+.text_idea_whatwedo {
+	top: 15%;
+	font-size: 8px;
+  	font-family: @base-font-italic;
+  	color: rgb(255, 255, 255);
+  	font-style: italic;
+   	text-align: center;
+  	position: relative;
+  	letter-spacing: 2px;
+  	font-weight: lighter;
+}
+.blog_img, .wrap_form_info {
+	 display: none;
+}
+
+}
