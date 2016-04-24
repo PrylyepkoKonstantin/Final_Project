@@ -3,11 +3,10 @@ $('.nav a').click(function (e) {
     // e.preventDefault();
 });
 
-$('#myModal').modal(options);
+$('#myModal').modal('backdrop');
 
 var form = document.forms.registration;
-form.addEventListener('submit', function (e) {
-	e.preventDefault();
+form.addEventListener('submit', function (e) {e.preventDefault();
 	var name = form.elements.name;
 	if (name.value.search(/[A-z a-z]/) === -1) {
 		name.style.border = '1px solid red';
