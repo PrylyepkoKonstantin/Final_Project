@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title> Comments </title>
+		<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+		<script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+	</head>
+	<body>
+		<fieldset>
+			<legend> Add comment </legend>
+				<div id="commentBlock">
+				<ul>
+				
+				</ul> 
+			</div>
+		</fieldset>
+		<form action="" name="comments">
+		 <div id="addComment">
+			<fieldset>
+				<legend> Add comment </legend>
+					<div>
+						<label for="people"> Select image: </label>
+								<img id="pic" src="img/profile-0.png">
+  						<select size=1 name="people" id="changeImage">
+  								<option data-img="img/profile-0.png">Choose image...</option>
+      							<option data-img="img/profile-1.jpg">1</option>
+      							<option data-img="img/profile-2.jpg">2</option>
+      							<option data-img="img/profile-3.jpg">3</option>
+      							<option data-img="img/profile-4.jpg">4</option>
+      							<option data-img="img/profile-5.jpg">5</option>
+  							</select>
+  					</div>
+					<div>
+							<label for="name"> Name: </label>
+							<input type="text" id="name" placeholder="name">
+					</div>
+					<div>
+							<label for="email"> E-mail: </label>
+							<input type="text" id="email" placeholder="email">
+					</div>
+					<div>
+							<label for="subject"> Subject: </label>
+							<input type="text" id="subject" placeholder="subject">
+					</div>
+					<div>
+							<label for="message"> Message text: </label>
+							<br>
+							<textarea cols="50" rows="8" type="text" id="comment" placeholder="Your comment..."></textarea>
+					</div>
+					
+					<div>
+						<input type="submit" value="Add comment" id="addcomment">
+						<input type="button" value="Delete comment" id="deletecomment">
+					</div>
+
+			</fieldset>
+		 </div>
+		</form>
+		
+		<script src="comments.js"></script>
+	</body>
+	</html>

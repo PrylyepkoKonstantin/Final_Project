@@ -25,7 +25,7 @@
             <div class="col-md-8 col-sm-8 col-xs-12 pull-right">
               <ul class="nav nav-pills">
                 <li role="presentation"><a class="contact_menu" href="index.html">About Us</a></li>
-                <li role="presentation"><a class="contact_menu" href="#">Our work</a></li>
+                <!-- <li role="presentation"><a class="contact_menu" href="#">Our work</a></li> -->
                 <li role="presentation"><a class="contact_menu" href="#">Blog</a></li>
                 <li role="presentation"><a class="contact_menu" href="contact.html">Contact</a></li>
               </ul>
@@ -33,6 +33,7 @@
           </div>
       </div>
     </header>
+  
     <section>
       <div class="container">
         <div class="blog">
@@ -54,35 +55,118 @@
               </div>              
         </div>
       </div>
-    </section>
-<!-- 
 
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                          </div>
-                          <div class="modal-body">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">10 Interview Questions Every JavaScript Developer Should Know</h4>
+          </div>
+          <div class="modal-body">
+                <p>At most companies, management must trust the developers to give technical interviews in order to assess candidate skills. If you do well as a candidate, you’ll eventually need to interview. Here’s how.</p>
 
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
+                <p><b>You Might Not Agree, and That’s OK</b></p>
+                <p> I advise people to hire based on whether or not a developer believes in class inheritance. Why? Because people who love it are obstinately stubborn about it. They will go to their graves clutching to it. As Bruce Lee famously said:</p>
 
+                <p><i><b>"Those who are unaware they are walking in darkness will never seek the light."</b></i></p>
+                <p>I won’t hire them. You shouldn’t, either.</p>
 
+                <p>I’ve seen classes wreak havoc on projects, companies, and lives. Many brilliant people disagree with my views. However, before dismissing my opinion out of hand, consider these points:</p>
 
+                <p>I ran an app consulting firm in the early days of SaaS, starting before the term was coined. I have worked on hundreds of projects for both startups and fortune 500 companies. I have a background in C++/Java (and assembly, AutoLisp, Delphi, etc…), and I consulted on dozens of Java and C++ apps (both class-oriented OOP languages). I was once an avid supporter of classical inheritance, and even wrote multi-language Rapid Application Development (RAD) tools for it.</p>
 
+                <p>I saw up close the many ways in which the class paradigm invited unwary developers down the wrong road, and I saw the extremely costly effects. I’ve seen products abruptly discontinued to stop losses, programmers laid off, and companies brought to their knees by brittle, tangled codebases caused primarily by the improper use of classes and class inheritance.<p>
 
+                <p>Class in JS is not harmless sugar for prototypal OO. Class is a virus that infects everything it touches. It came to us formally in JavaScript with ES6, and at the same time, React was taking off. Lots of people started using classes for React components (you don’t have to: the new React 0.14 supports pure function components, or try react-stamp).
 
+                <p>Many are unaware that you can build React components in a class-free style. This has caused confusion and incompatibility between React components and other composable elements in the React ecosystem (components, mixins, and component wrappers).</p>
+                            
+                <p>During the days of Backbone dominance (Backbone used its own flavor of classes), I watched a once malleable codebase transform into a brittle mess. I saw code complicated by abstractions necessary to unify the calling API of classes that require `new`, and factories that don’t, forcing the use of dependency injection container that ended up coupling every dependent module tightly to the container API. Those of you with Angular experience will understand what I’m talking about. Angular has four different ways to create services, and features a dependency injection container to abstract them all.</p>
 
-                
+                <p>Many brilliant people warned of the perils of class inheritance decades ago, before JavaScript was invented. You can find their warnings in essays with titles like “Object Oriented Programming Considered Harmful”, “Class Considered Harmful”, and “New Considered Harmful”. Such warnings have been published on Usenet, in academic papers, and respected publications such as Doctor Dobb’s Journal: a magazine that gave us nearly 40 years of software development wisdom before its sunset at the end of 2014. Incidentally, there’s also an essay called “Considered Harmful Considered Harmful”, but I digress.</p>
 
+                <p>Joe Armstrong, the creator of Erlang summed up one of the famous problems with class in what has become known as The Gorilla Banana Problem from the great book, “Coders at Work” (buy it, there’s lots of other great stuff in it):</p>
+                            
+                <p><i><b>"The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle."”"</b></i><p>
+
+                <p>The seminal tome of OO design, “Design Patterns: Elements of Reusable Object-Oriented Software” — the book from which design patterns get their name — implores:</p>
+
+                <p><i><b>"Favor object composition over class inheritance."</b></i></p>
+          </div>
+          <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+      <div class="container">
+        <div class="blog">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="blog_content">
+               <div class="blog_header">10 Interview Questions Every JavaScript Developer Should Know</div>
+                <div class="blog_elements1"> 
+                 <p>At most companies, management must trust the developers to give technical interviews in order to assess candidate skills. If you do well as a candidate, you’ll eventually need to interview. Here’s how.</p>
+                 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> Read more... </button>
+                </div>
+              </div>
+            </div> 
+             </div>
+              <div class="row">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="blog_img"><img src=""></div>                
+               </div>
+              </div>              
+        </div>
+      </div>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">10 Interview Questions Every JavaScript Developer Should Know</h4>
+          </div>
+          <div class="modal-body">
+                <p>At most companies, management must trust the developers to give technical interviews in order to assess candidate skills. If you do well as a candidate, you’ll eventually need to interview. Here’s how.</p>
+
+                <p><b>You Might Not Agree, and That’s OK</b></p>
+                <p> I advise people to hire based on whether or not a developer believes in class inheritance. Why? Because people who love it are obstinately stubborn about it. They will go to their graves clutching to it. As Bruce Lee famously said:</p>
+
+                <p><i><b>"Those who are unaware they are walking in darkness will never seek the light."</b></i></p>
+                <p>I won’t hire them. You shouldn’t, either.</p>
+
+                <p>I’ve seen classes wreak havoc on projects, companies, and lives. Many brilliant people disagree with my views. However, before dismissing my opinion out of hand, consider these points:</p>
+
+                <p>I ran an app consulting firm in the early days of SaaS, starting before the term was coined. I have worked on hundreds of projects for both startups and fortune 500 companies. I have a background in C++/Java (and assembly, AutoLisp, Delphi, etc…), and I consulted on dozens of Java and C++ apps (both class-oriented OOP languages). I was once an avid supporter of classical inheritance, and even wrote multi-language Rapid Application Development (RAD) tools for it.</p>
+
+                <p>I saw up close the many ways in which the class paradigm invited unwary developers down the wrong road, and I saw the extremely costly effects. I’ve seen products abruptly discontinued to stop losses, programmers laid off, and companies brought to their knees by brittle, tangled codebases caused primarily by the improper use of classes and class inheritance.<p>
+
+                <p>Class in JS is not harmless sugar for prototypal OO. Class is a virus that infects everything it touches. It came to us formally in JavaScript with ES6, and at the same time, React was taking off. Lots of people started using classes for React components (you don’t have to: the new React 0.14 supports pure function components, or try react-stamp).
+
+                <p>Many are unaware that you can build React components in a class-free style. This has caused confusion and incompatibility between React components and other composable elements in the React ecosystem (components, mixins, and component wrappers).</p>
+                            
+                <p>During the days of Backbone dominance (Backbone used its own flavor of classes), I watched a once malleable codebase transform into a brittle mess. I saw code complicated by abstractions necessary to unify the calling API of classes that require `new`, and factories that don’t, forcing the use of dependency injection container that ended up coupling every dependent module tightly to the container API. Those of you with Angular experience will understand what I’m talking about. Angular has four different ways to create services, and features a dependency injection container to abstract them all.</p>
+
+                <p>Many brilliant people warned of the perils of class inheritance decades ago, before JavaScript was invented. You can find their warnings in essays with titles like “Object Oriented Programming Considered Harmful”, “Class Considered Harmful”, and “New Considered Harmful”. Such warnings have been published on Usenet, in academic papers, and respected publications such as Doctor Dobb’s Journal: a magazine that gave us nearly 40 years of software development wisdom before its sunset at the end of 2014. Incidentally, there’s also an essay called “Considered Harmful Considered Harmful”, but I digress.</p>
+
+                <p>Joe Armstrong, the creator of Erlang summed up one of the famous problems with class in what has become known as The Gorilla Banana Problem from the great book, “Coders at Work” (buy it, there’s lots of other great stuff in it):</p>
+                            
+                <p><i><b>"The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle."”"</b></i><p>
+
+                <p>The seminal tome of OO design, “Design Patterns: Elements of Reusable Object-Oriented Software” — the book from which design patterns get their name — implores:</p>
+
+                <p><i><b>"Favor object composition over class inheritance."</b></i></p>
+          </div>
+          <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
