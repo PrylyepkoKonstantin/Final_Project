@@ -2,7 +2,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         clean: {
             js: {
-                src: ['dest/js']
+                src: ['js/js']
             },
             css: {
                 src: ['dest/css']
@@ -13,16 +13,16 @@ module.exports = function(grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['app/js/app.component.js', 'app/js/main.js'],
-                dest: 'dest/js/output.js'
+                src: ['js/index.js'],
+                dest: 'dest/output.js'
             }
         },
         jshint: {
             options: {
                 esversion: 6
             },
-            beforeconcat: ['Gruntfile.js', 'app/js/**/*.js'],
-            afterconcat: ['dest/js/output.js']
+            beforeconcat: ['Gruntfile.js', 'js/*.js'],
+            afterconcat: ['dest/output.js']
         },
         babel: {
             options: {
@@ -30,31 +30,31 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'dest/js/output.js': 'dest/js/output.js'
+                    'dest/output.js': 'dest/output.js'
                 }
             }
         },
         uglify: {
             my_target: {
                 files: {
-                    'dest/js/output.min.js': 'dest/js/output.js'
+                    'dest/output.min.js': 'dest/output.js'
                 }
             }
         },
         less: {
             development: {
                 files: {
-                    'dest/css/style.css': 'app/styles/style.less'
+                    'dest/styles.css': 'styles/styles.less'
                 }
             }
         },
         watch: {
             js: {
-                files: ['app/js/**/*.js'],
+                files: ['js/*.js'],
                 tasks: ['build-js']
             },
             css: {
-                files: ['app/styles/**/*.less'],
+                files: ['styles/*.less'],
                 tasks: ['build-css']
             }
         },
@@ -67,12 +67,12 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'dest/css/*.css'
+                src: 'dest/*.css'
             }
         },
 
         jscs: {
-            src: "app/js/**/*.js",
+            src: "js/*.js",
             options: {
                 config: ".jscsrc",
                 esnext: true, // If you use ES6 http://jscs.info/overview.html#esnext
